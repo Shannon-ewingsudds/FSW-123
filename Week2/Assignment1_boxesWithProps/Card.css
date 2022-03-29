@@ -1,0 +1,18 @@
+div {
+	display: flex;
+	margin-top: 3rem;
+	justify-content: center;
+  }
+  
+hr {
+width: 240px;
+color: black;
+}
+
+div div {
+	flex-direction: column;
+	text-align:center;
+	margin: 1rem;
+	font-family:Arial, Helvetica, sans-serif
+	
+}
