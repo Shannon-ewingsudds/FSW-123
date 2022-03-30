@@ -1,0 +1,14 @@
+div {
+    display: grid;
+    justify-content: center;
+}
+
+h1 {
+    color: deeppink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+li {
+    list-style-type: none;
+    color: darkblue
+}
