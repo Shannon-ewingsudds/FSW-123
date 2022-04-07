@@ -1,0 +1,17 @@
+h1{
+  display: flex;
+  justify-content: center;
+  color:blue;
+}
+
+#dice{
+  display: flex;
+  justify-content: center;
+
+}
+
+button{
+  display: flex;
+  margin-left: 46%;
+  margin-top: 20px;
+}
