@@ -1,0 +1,28 @@
+html{
+  background-color:linen;
+}
+
+.TodoList {
+  display: grid;
+  justify-content: center;
+}
+.Signature{
+  display: grid;
+  justify-content: center;
+  font-size: .75rem;
+  color:grey;
+}
+h1 {
+  display: grid;
+  justify-content: center;
+  color: deeppink;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+li {
+  list-style-type: none;
+  color: darkblue
+}
+button{
+  margin-left: 1rem;
+}
