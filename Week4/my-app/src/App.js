@@ -35,7 +35,8 @@ function App() {
   };
   return (
     <>
-    <h1>Add To the List of Todos</h1>
+    <h1>Todo App</h1>
+    <h4>Add new todos via the input field:</h4>
     <TodoForm addTodo = {addTodo}/>
     <ToDoList todos ={todos} completeTodo ={completeTodo} deleteTodo ={deleteTodo}/>
   </>
