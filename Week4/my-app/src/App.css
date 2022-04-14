@@ -26,18 +26,19 @@ li {
 button{
   margin-left: 1rem;
 }
-.todoForm{
+#todoForm{
   display: grid;
   justify-content: center;
 }
-#addMe{
+#addTodo{
   display: grid;
   margin-top: 1rem;
   justify-content: center;
   margin-left: -1px;
 }
-#todoText{
+h3{
   display: grid;
   justify-content: center;
-  align-content: center;
+  font-weight: bold;
+  color: red;
 }
