@@ -1,0 +1,42 @@
+*
+{
+    list-style-type: none;  
+
+}
+
+
+label
+{
+    margin-right: 35px;
+  
+
+
+}
+
+#moreTodos 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+
+.adding
+{
+    margin-left: 10px;
+        justify-content: center;
+       align-items: center; 
+
+}
+
+input {
+   margin-left: 20px;
+   margin-top: 5px;
+   padding: 5px;
+    
+}
+
+#inputOptions{
+    font-size: 14px;
+
+}

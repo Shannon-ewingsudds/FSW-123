@@ -3,27 +3,35 @@ import {useState} from 'react';
 export default function TodoForm(props){
 
     const [userInput, storeInput] = useState("")
-    const changeInput = () => {storeInput(document.querySelector("#inputTodoItem").value)} 
+    const changeInput = () => {storeInput(document.querySelector("#inputValue").value)} 
+
 
     return(
-        <div id = "todoForm">
-            <input type = "text" placeholder = "type item here"  id = "inputTodoItem" onChange = {() => changeInput()}></input>
-            <button id='addTodo' onClick = {() =>{
-                if(document.querySelector("#inputTodoItem").value !== ""){
+        <div id = "inputOptions">
+            <input type = "text"  id = "inputValue" onChange = {() => changeInput()}></input>
+       
+            <button onClick = {() =>{
+                if(document.querySelector("#inputValue").value !== ""){
                     props.addTodo(userInput)
                 } 
 
-                else if(document.querySelector("#inputTodoItem").value === ""){
+                 else if(document.querySelector("#inputValue").value === ""){
                     const removeError = () =>{
-                        document.querySelector("#errorMessage").remove()
+                        document.querySelector("#errorReported").remove()
                     }
-                    const errorMessage = document.createElement("h3") 
-                    errorMessage.textContent = "Todo is Empty!!"
-                    errorMessage.setAttribute("id", "errorMessage")
-                    document.querySelector("#todoForm").appendChild(errorMessage)
-                    setTimeout(removeError, 5000)
+                    const errorReported = document.createElement("h2") 
+                    errorReported.textContent = "input field is empty"
+                    errorReported.style = "color: red"
+                    errorReported.setAttribute("id", "errorReported")
+                    document.querySelector("#inputOptions").appendChild(errorReported)
+                    setTimeout(removeError, 3500)
+
+                    
                 }
-            }}>Add todo</button>
+
+               
+                
+          }}>Add todo</button>
         </div>
     )
 }
