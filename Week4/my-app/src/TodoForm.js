@@ -29,7 +29,10 @@ export default function TodoForm(props){
                     
                 }
 
-               
+                .update-button {
+                    border-radius: 5px;
+                    margin: 5px;
+                }
                 
           }}>Add todo</button>
         </div>

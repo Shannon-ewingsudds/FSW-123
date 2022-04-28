@@ -26,6 +26,7 @@ li {
 button{
   margin-left: 1rem;
 }
+
 #todoForm{
   display: grid;
   justify-content: center;
