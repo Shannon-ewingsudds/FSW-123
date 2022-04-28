@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from 'react';
-import TodoForm from "./TodoForm";
+
 
 function Todo({ todo, comp, del, edit }) {
 
@@ -33,7 +33,7 @@ function Todo({ todo, comp, del, edit }) {
     }
 
     const buttonStyle = {
-        backgroundColor: 'rgb(230, 90, 90)',
+        backgroundColor: 'pink',
         borderRadius: '50%',
         marginLeft: '10px'
     };
@@ -43,7 +43,6 @@ function Todo({ todo, comp, del, edit }) {
         <div style = {{textDecoration: todo.isCompleted ? 'line-through' : ''}}>
             { !editToggle ? 
                 <>
-
                     <input 
                     onChange = {() => comp(todo.id)} 
                     value = {todo.isCompleted} 
@@ -54,7 +53,6 @@ function Todo({ todo, comp, del, edit }) {
                     {todo.text}
                     <button 
                         onClick = {() => del(todo.id)}
-                        className = 'del-button'
                         style = {buttonStyle}>
                         X
                     </button>
@@ -66,9 +64,7 @@ function Todo({ todo, comp, del, edit }) {
                     </button>
 
                 </>
-
                 : 
-
                 <>
                     <form>
                         <input 
@@ -80,13 +76,13 @@ function Todo({ todo, comp, del, edit }) {
                         <button
                             onClick = {onSubmitEdit}
                             className = 'update-button'
-                            style = {{backgroundColor:"rgba(4, 197, 4, 0.699)"}}>
+                            style = {{backgroundColor:"lightblue"}}>
                             Update
                         </button>
                         <button 
                             onClick = {onCancel}
                             className = 'cancel-button'
-                            style = {{backgroundColor:"rgba(4, 197, 4, 0.699)"}}>
+                            style = {{backgroundColor:"lightblue"}}>
                             Cancel
                         </button>
                     </form>
