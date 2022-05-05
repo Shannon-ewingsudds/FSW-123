@@ -8,10 +8,12 @@ function Pokemons() {
     const [pokemons, setPokemons] = useState([]);
 
     useEffect(() => {
-        axios.get('https://pokeapi.co/api/v2/pokemon/?offset=10&limit=10')
-            .then(res => setPokemons(res.data.results))
-            .then(err => console.log(err))
-    }, []);
+        axios.get('https://pokeapi.co/api/v2/pokemon?offset=5&limit=5')
+            .then(res => { setPokemons(res.data.results)
+            
+            
+    })
+}, [])
 
     const addPokemon = (e) => {
         e.preventDefault();
