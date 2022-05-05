@@ -8,7 +8,7 @@ function Pokemons() {
     const [pokemons, setPokemons] = useState([]);
 
     useEffect(() => {
-        axios.get('https://pokeapi.co/api/v2/pokemon?offset=5&limit=5')
+        axios.get('https://pokeapi.co/api/v2/pokemon')
             .then(res => { setPokemons(res.data.results)
             
             
@@ -40,8 +40,11 @@ function Pokemons() {
             <h1>Pokemons You Love</h1>
             <form id="pokemonsForm">
                 <input placeholder="write your own pokemon" required></input><button onClick ={addPokemon}>Add Pokemon!</button>
-                {listOfPokemons}
             </form>
+            <div id="pokemonsLists">
+                 {listOfPokemons} 
+            </div>
+           
         </div>
         
     )

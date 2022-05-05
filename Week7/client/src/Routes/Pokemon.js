@@ -6,7 +6,7 @@ function Pokemon({pokemon, delPokemon}) {
             {
                 (pokemon.pokemon) ? 
                 <div className ="pokemon-div">
-                    <li>{pokemon.results}<button onClick ={() => delPokemon(pokemon.id)}>X</button></li>
+                    <li>{pokemon.pokemon}<button onClick ={() => delPokemon(pokemon.id)}>X</button></li>
                 </div>:
                 <div className ="pokemon-div">
                     <li>{`${pokemon.name}`}<button onClick ={() => delPokemon(pokemon.id)}>X</button></li>
