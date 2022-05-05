@@ -1,12 +1,6 @@
-# Getting Started with Create React App
+# Welcome to my Pokemon Website!!
 
 I created an API Website that lists the names of some Pokemon. My son loves playing Pokemon with his friends and it gave me an idea to use the Pokemon API. 
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
