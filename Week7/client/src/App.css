@@ -16,7 +16,7 @@ header {
 }
 .links{
   list-style-type: none;
-  margin: 5px;
+  margin: 1rem;
   font-size: 2rem;
 }
 main {

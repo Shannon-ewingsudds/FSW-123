@@ -9,9 +9,8 @@ function Pokemons() {
 
     useEffect(() => {
         axios.get('https://pokeapi.co/api/v2/pokemon')
-            .then(res => { setPokemons(res.data.results)
-            
-            
+            .then(res => { setPokemons(res.data.results)  
+            .then(err => console.log(err))
     })
 }, [])
 

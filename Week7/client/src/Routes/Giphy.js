@@ -30,7 +30,7 @@ function Giphy({initialQuery}) {
     
     return (
         <form id="giphySearchForm">
-            <label className="subtitle">Enter a word of phrase: </label>
+            <label className="subtitle">Enter your favorite Pokemon: </label>
             <input type="text" name="search-term" id="search-term" className="input" placeholder="search giphy"></input>
             <button onClick= {handleClick} className="search-button">Search</button>
             <div className="imgContainer">
